@@ -30,5 +30,35 @@
 
 </div>
 </div>
+ <!-- Tabs + Summary -->
+  <div class="bg-white rounded-xl shadow p-4 mb-4">
+
+    <!-- Tabs -->
+    <div class="flex items-center gap-4 border-b pb-2 mb-3">
+      <button class="tab tab-active" onclick="setTab(event,'all')">All</button>
+      <button class="tab" onclick="setTab(event,'open')">Open</button>
+      <button class="tab" onclick="setTab(event,'closed')">Closed</button>
+    </div>
+
+    <!-- Info Row -->
+    <div class="flex justify-between items-center text-sm text-gray-500">
+      <div class="flex items-center gap-2">
+        <span><img src="" alt=""></span>
+        <span id="issueCount">Issues loaded</span>
+      </div>
+
+      <div class="flex gap-3">
+     <span class="text-green-500">● Open</span>
+        <span class="text-purple-500">● Closed</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="loader" class="text-center hidden"> class="text-center hidden">
+    <span class="loading loading-spinner loading-lg"></span>
+  </div>
+
+
+<script src="./script.js"></script>
 </body>
 </html>
