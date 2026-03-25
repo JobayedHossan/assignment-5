@@ -60,6 +60,44 @@
  <!-- Cards -->
   <div id="issuesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"></div>
 </div>
+<!-- Modal -->
+<dialog id="modal" class="modal">
+  <div class="modal-box bg-white max-w-md rounded-md p-5">
+
+    <h3 id="modalTitle" class="font-semibold text-base mb-2"></h3>
+
+    <div class="flex items-center gap-2 text-xs mt-3 ">
+      <span id="modalStatusBadge"></span>
+      <p class="pb-4" id="modalMeta" class="text-xs text-gray-400 "></p>
+    </div>
+
+    <div class="flex gap-2 mb-3">
+      <span id="modalType"></span>
+      <span id="modalLabel"></span>
+    </div>
+
+    <p id="modalDescription" class="text-sm text-gray-600 mb-4"></p>
+
+    <div class="flex justify-between text-sm mb-4">
+      <div>
+        <p class="text-gray-400 text-xs">Assignee:</p>
+        <p id="modalAuthor"></p>
+      </div>
+
+      <div>
+        <p class="text-gray-400 text-xs">Priority:</p>
+        <p id="modalPriority"></p>
+      </div>
+    </div>
+
+    <div class="flex justify-end">
+      <form method="dialog">
+        <button class="btn btn-primary btn-xs">Close</button>
+      </form>
+    </div>
+
+  </div>
+</dialog>
 
 <script src="./script.js"></script>
 </body>
